@@ -1,0 +1,14 @@
+ <?php
+    $tekst = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum 
+convallis, quam nec malesuada rhoncus, odio metus vestibulum quam, in laoreet ex odio 
+scelerisque mi. Sed sit amet egestas augue. Proin fermentum sit amet nibh eget 
+facilisis. Suspendisse ultrices et lacus at placerat";
+
+    $tablica = explode(' ', $tekst);
+    foreach ($tablica as $wpis) {
+        echo "$wpis <br>";
+    }
+
+    $tab_posklejana = implode(' ',$tablica);
+    echo "<br> Tekst posklejany: $tab_posklejana";
+    ?>
